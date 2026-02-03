@@ -1,0 +1,7 @@
+<div class="grid">
+  <div class="card" *ngFor="let t of templates$ | async">
+    <img [src]="t.thumbnail">
+    <h3>{{ t.title }}</h3>
+    <button>Create</button>
+  </div>
+</div>
